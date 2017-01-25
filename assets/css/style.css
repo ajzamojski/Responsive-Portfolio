@@ -200,7 +200,7 @@ h2 {
 }
 
 
-@media only screen and (max-width: 980px)
+@media screen and (max-width: 980px)
 {
 	.nav {
 	background-color: #ffffff;
@@ -320,7 +320,7 @@ li {
 
 }
 	
-@media only screen and (max-width: 768px)
+@media screen and (max-width: 768px)
 {
 
 body {
@@ -434,7 +434,7 @@ h3 {
 
 }
 
-@media only screen and (max-width: 640px)
+@media screen and (max-width: 640px)
 {
 body {
 	margin: 0px;
@@ -454,6 +454,7 @@ header {
 
 .navheading {
 	width: 100%;
+	margin: 0px;
 	position: static;
 }
 
