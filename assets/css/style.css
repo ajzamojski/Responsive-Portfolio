@@ -5,7 +5,7 @@ html {
 }
 
 * {
-	margin: 0;
+	box-sizing: border-box;
 }
 
 body {
@@ -17,16 +17,15 @@ body {
 	background-image: url("../images/cork-wallet.png");
 }
 
-section {
+section .nav{
 	font-family: Georgia, Times, 'Times New Roman', serif;
-	
 }
 
 .nav {
 	background-color: #ffffff;
 	border-bottom: #cccccc;
 	border-bottom-style: solid;
-	height: 70px;
+	height: 73px;
 }
 
 .navheading {
@@ -57,9 +56,9 @@ h1 {
 	padding: 20px 5px 20px 5px;
 	color: #777777;
 	margin:0px;
-	position: absolute;
+	position: relative;
 	right: 152.5px;
-	width: 250px;
+	width: 260px;
 	text-align: center;
 }
 
@@ -69,33 +68,36 @@ li {
 }
 
 .wrapper {
-	min-height: 100%;
-	height: auto !important;
-	height: 100%;
-	margin: 0 auto -16px;
+	max-width: 960px;
+	margin: 10px auto;
 	clear: both;
-	margin: 20px 152.5px 0px 152.5px;
 	line-height: 210%;
+}
+
+#main-container {
+	padding-top: 30px;
 }
 
 .aboutme {
 	float: left;
-	padding: 10px 42px 10px 30px;
-	margin: 0px 22px 30px 0px;
+	padding: 30px;
+	margin: 0px 0px 30px 0px;
 	border: #dddddd;
 	border-style: solid;
-	width: 550px;
-	background-color: white;
+	width: 100%;
+	max-width: 650px;
+	background-color: #ffffff;
 }
 
 .sidebar {
 	float: right;
 	background-color: white;
 	text-align: center;
-	padding: 10px 19px 30px 19px;
+	padding: 30px;
 	border: #dddddd;
 	border-style: solid;
-	width: 228px;
+	width: 100%;
+	max-width: 270px;
 }
 
 h2 { 
@@ -125,10 +127,21 @@ h2 {
  }
 
 .div-image {
+	position: relative;
 	float: left;
- 	margin: 10px 25px 30px 0px;
+ 	margin: 20px 10px 25px 25px;
  	width: 250px;
- 	height: 200px;
+}
+
+.div-image:nth-child(even) {
+	margin-right: 10px;
+
+}
+
+.div-image img {
+	width: 100%;
+	border: 0 none;
+	opacity: .8;
 }
 
 .text-in-image {
@@ -148,18 +161,18 @@ h2 {
 }
 
 .name {
-	width: 550px;
+	width: 100%;
 	padding: 5px 0px 5px 5px;
 	
 }
 
 .email {
-	width: 550px;
+	width: 100%;
 	padding: 5px 0px 5px 5px;
 }
 
 .message {
-	width: 550px;
+	width: 100%;
 	height: 200px;
 	border-color: #cccccc;
 }
@@ -187,10 +200,9 @@ h2 {
 }
 
 .footer {
-	height: 16px;
+	width: 100%;
 	clear: both;
 	color: #777777;
-	margin-top: 20px;
 	padding: 10px 0px 10px 0px;
 	border-top: #4aaaa5;
 	border-top-style: solid;
@@ -200,26 +212,25 @@ h2 {
 }
 
 
-@media screen and (max-width: 980px)
+ @media screen and (max-width: 980px)
 {
 
-section {
+.nav {
 	position: static;
 	width: 100%;
 	margin: 0px;
 	padding: 0px;
-}
-.nav {
+
 	background-color: #ffffff;
 	border-bottom: #cccccc;
 	border-bottom-style: solid;
-	height: 70px;
+	height: 73px;
 }
 
 .navheading {
 	float: left;
 	position: absolute;
-	left: 100px;
+	left: 115px;
 	width: 250px;
 	height: 70px;
 	background-color: #4aaaa5;
@@ -245,8 +256,8 @@ h1 {
 	color: #777777;
 	margin:0px;
 	position: absolute;
-	right: 75px;
-	width: 250px;
+	right: 100px;
+	width: 260px;
 	text-align: center;
 }
 
@@ -256,41 +267,38 @@ li {
 }
 
 .wrapper {
-	width: 800px;
-	min-height: 100%;
-	height: auto !important;
-	height: 100%;
-	margin: 0 auto -16px;
+	max-width: 740px;
 	clear: both;
-	margin: 20px 0px 0px 100px;
 	line-height: 210%;
 }
 
 .aboutme {
 	float: left;
-	padding: 10px 42px 10px 30px;
-	margin: 0px 22px 30px 0px;
+	padding: 30px;
+	margin: 0px 0px 30px 0px;
 	border: #dddddd;
 	border-style: solid;
-	width: 400px;
+	width: 100%;
+	max-width: 480px;
 	background-color: white;
 }
 
 #adammontreal {
  	float: left;
- 	padding: 0px 20px 10px 0px;
- 	width: 400px;
+ 	padding: 0px;
+ 	margin: 0px;
+ 	width: 100%;
  }
 
 .sidebar {
 	float: right;
 	background-color: white;
 	text-align: center;
-	margin-right: 25px;
-	padding: 10px 19px 30px 19px;
+	padding: 30px;
 	border: #dddddd;
 	border-style: solid;
-	width: 228px;
+	width: 100%;
+	max-width: 230px;
 }
 
 .div-image {
@@ -317,7 +325,7 @@ li {
 }
 
 .name, .email, .message {
-	width: 390px;
+	width: 100%;
 }
 
 .submit {
@@ -326,7 +334,8 @@ li {
 }
 
 }
-	
+
+
 @media screen and (max-width: 768px)
 {
 
@@ -340,16 +349,14 @@ header {
 	width: 100%;
 }
 
-section {
+.nav {
 	position: static;
 	width: 100%;
 	margin: 0px;
 	padding: 0px;
-}
 
-.nav {
 	width: 100%;
-	height: 70px;
+	height: 73px;
 	padding: 0px;
 	margin: 0px;
 }
@@ -357,6 +364,7 @@ section {
 .navheading {
 	position: static;
 	margin-left: 25px;
+
 }
 
 .navlist{
@@ -373,29 +381,35 @@ li {
 }
 
 .wrapper {
-	width: 100%;
+	max-width: 750px;
 	margin: 0px;
 	padding: 0px;
 }
 
 .aboutme {
-	width: 85%;
-	margin: 15px 10px 15px 25px;
-	padding: 5px 15px 25px 30px;
-	}
+	width: 100%;
+	margin: 15px 25px;
+	padding: 30px;
+	max-width: 700px;
+}
+
+#adammontreal {
+	width: 50%;
+	padding: 0px;
+	margin: 0px 15px 10px 0px;
+}
 
 .div-image {
 	float: left;
- 	margin: 10px 0px 30px 0px;
- 	width: 50%;
- 	height: 200px;
+ 	margin: 0px 8px 25px 0px;
+ 	width: auto;
+ 	height: 210px;
 }
 
 .text-in-image {
-	position: absolute;
-	width: 300px;
-	margin: 150px 0px;
-	padding: 5px 0px;
+	position: relative;
+	width: auto;
+	bottom: 50px;
 	text-align: center;
 	background-color: #4aaaa5;
 	color: #ffffff;
@@ -409,7 +423,7 @@ li {
 
 
 h2 {
-	width: 97%;
+	width: 100%;
 	color: #4aaaa5;
 	border-bottom-color: #dddddd;
 	border-bottom-style: solid;
@@ -422,7 +436,8 @@ h2 {
 
 .sidebar {
 	float: left;
-	width: 660px;
+	width: 100%;
+	max-width: 700px;
 	margin: 5px 25px;
 	padding: 10px 0px 10px 30px;
 }
@@ -438,7 +453,7 @@ h3 {
 }
 
 .name, .email, .message {
-	width: 610px;
+	width: 100%;
 }
 
 .submit {
@@ -447,6 +462,7 @@ h3 {
 }
 
 }
+
 
 @media screen and (max-width: 640px)
 {
@@ -457,10 +473,7 @@ body {
 }
 
 section {
-	position: static;
-	width: 100%;
-	margin: 0px;
-	padding: 0px;
+
 }
 
 header {
@@ -473,6 +486,8 @@ h1 {
 }
 
 .nav {
+	width: 100%;
+	max-width: 640px;
 	position: static;
 	width: 100%;
 	height: 140px;
@@ -482,12 +497,14 @@ h1 {
 
 .navheading {
 	width: 100%;
+	max-width: 640px;
 	margin: 0px;
 	position: static;
 }
 
 .navlist{
 	width: 100%;
+	max-width: 640px;
 	position: static;
 	clear: both;
 }
@@ -505,20 +522,21 @@ li {
 	border-style: solid;
 }
 
-/*ul:last-child {
+ul:last-child {
 	border: none;
 }
-*/
+
 .wrapper {
-	width: 100%;
+	max-width: 625px;
 	margin: 0px;
 	padding: 0px;
 }
 
 .aboutme {
-	width: 83%;
-	margin: 0px 10px;
-	padding: 10px 42px 25px 42px;
+	width: 100%;
+	max-width: 435px;
+	margin: 0px 15px;
+	padding: 10px 15px 25px 20px;
 }
 
 .div-image {
@@ -528,19 +546,19 @@ li {
 }
 
 #pic-size {
-	width: 500px;
+	width: 100%;
 	height: 400px;
 }
 
 .text-in-image {
-	width: 500px;
+	width: 100%;
 	margin: 0px;
 	position: absolute;
 	bottom: 10px;
 }
 
 .name, .email, .message {
-	width: 500px;
+	width: 100%;
 }
 
 .submit {
@@ -556,9 +574,10 @@ li {
 
 .sidebar {
 	float: left;
-	width: 88%;
-	margin: 5px 10px;
-	padding: 10px 24px 10px 30px;
+	width: 100%;
+	max-width: 435px;
+	margin: 5px 15px;
+	padding: 10px 15px 25px 20px;
 }
 
 h3 {
@@ -578,7 +597,7 @@ h3 {
 
 }
 
-@media screen and (max-width: 480px)
+/* @media screen and (max-width: 320px)
 {
 body {
 	width: 100%;
@@ -604,7 +623,7 @@ h1 {
 
 .nav {
 	position: static;
-	width: 106%;
+	width: 112%;
 	height: 140px;
 	padding: 0px;
 	margin: 0px;
@@ -638,7 +657,7 @@ li {
 /*ul:last-child {
 	border: none;
 }
-*/
+
 .wrapper {
 	width: 100%;
 	margin: 0px;
@@ -670,7 +689,7 @@ li {
 }
 
 .name, .email, .message {
-	width: 500px;
+	width: 100%;
 }
 
 .submit {
@@ -686,7 +705,7 @@ li {
 
 .sidebar {
 	float: left;
-	width: 89%;
+	width: 91%;
 	margin: 5px 10px;
 	padding: 10px 24px 10px 30px;
 }
@@ -703,7 +722,7 @@ h3 {
 
 .footer {
 	position: static;
-	width: 106%;
+	width: 112%;
 }
 
-}
+} */
