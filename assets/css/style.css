@@ -149,6 +149,7 @@ h2 {
 }
 
 .text-in-image {
+	visibility: hidden;
 	position: absolute;
 	width: 250px;
 	margin: 150px 0px;
@@ -310,6 +311,10 @@ li {
  	margin: 10px 25px 35px 0px;
  	width: 400px;
  	height: 250px;
+}
+
+.text-in-image {
+	visibility: hidden;
 }
 
 .text-in-image {
