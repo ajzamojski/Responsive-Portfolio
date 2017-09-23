@@ -158,7 +158,9 @@ h2 {
 	text-align: center;
 	background-color: #4aaaa5;
 	color: #ffffff;
+	font-family: monospace;
 }
+
 
 #pic-size {
 	float: left;
