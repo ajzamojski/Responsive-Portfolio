@@ -1,6 +1,5 @@
 
 // mouseover effects for portfolio tab
-$( window ).on( "load", function() {
 	$('.div-image').mouseover(function() {
 	  $(this).find('.text-in-image').css({
 	  	"visibility" : "visible"
@@ -12,6 +11,5 @@ $( window ).on( "load", function() {
 	  $(this).find('.text-in-image').css("visibility","hidden");
 	  $(this).find("img").css({"opacity" : "1"});
 	});
-});
 
 
